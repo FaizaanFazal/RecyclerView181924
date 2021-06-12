@@ -33,27 +33,28 @@ public class MainActivity extends AppCompatActivity {
         edtRoll=findViewById(R.id.edtRoll);
         edtName=findViewById(R.id.edtName);
         recyclerView= findViewById(R.id.recycler181924);
-//        studentList.add(new student("Faizaan","181924"));
-//        studentList.add(new student("jhone","191924"));
-//        studentList.add(new student("Kaal","129924"));
-//        recyclerviewadapter = new recyclerviewadapter(studentList,MainActivity.this);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-//        recyclerView.setHasFixedSize(true);
-//        recyclerView.setAdapter(recyclerviewadapter);
+        studentList.add(new student("Faizaan","181924"));
+        studentList.add(new student("jhone","191924"));
+        studentList.add(new student("Kaal","129924"));
+        studentList.add(new student("Lalu","202021"));
+        recyclerviewadapter = new recyclerviewadapter(studentList,MainActivity.this);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setAdapter(recyclerviewadapter);
 
-        btnadd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String N= edtName.getText().toString();
-                String R= edtRoll.getText().toString();
-
-                studentList.add(new student(N,R));
-                recyclerviewadapter = new recyclerviewadapter(studentList,MainActivity.this);
-                recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
-                recyclerView.setHasFixedSize(false);
-                recyclerView.setAdapter(recyclerviewadapter);
-            }
-        });
+//        btnadd.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String N= edtName.getText().toString();
+//                String R= edtRoll.getText().toString();
+//
+//                studentList.add(new student(N,R));
+//                recyclerviewadapter = new recyclerviewadapter(studentList,MainActivity.this);
+//                recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+//                recyclerView.setHasFixedSize(false);
+//                recyclerView.setAdapter(recyclerviewadapter);
+//            }
+//        });
 
     }
 }
